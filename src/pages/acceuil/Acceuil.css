@@ -1,0 +1,195 @@
+
+/* Conteneur principal */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Utilisation de min-height pour s'assurer que le conteneur prend toute la hauteur de la vue */
+}
+
+/* En-tête */
+.admin-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.header-brand {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.header-brand-highlight {
+    color: #007bff;
+}
+
+.header-nav .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Contenu principal */
+.admin-main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    padding: 30px 50px;
+    width: 100%;
+}
+
+.welcome-section .div1 {
+    width: 100%; /* Utilisation de 100% pour une largeur adaptable */
+    max-width: 600px; /* Limitation de la largeur pour éviter le texte trop large */
+    margin-right: 1rem; /* Marge entre les deux colonnes */
+}
+
+.welcome-section .div2 {
+    width: 100%; /* Utilisation de 100% pour une largeur adaptable */
+    max-width: 600px; /* Limitation de la largeur pour éviter le dépassement */
+    margin-left: 1rem; /* Marge entre les deux colonnes */
+}
+
+.welcome-section .div2 img {
+    width: 100%;
+    height: auto; /* Ajustement automatique de la hauteur */
+}
+
+.welcome-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.cta-buttons .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Section Fonctionnalités */
+.features-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 100%; /* Utilisation de 100% pour une largeur adaptable */
+    max-width: 300px; /* Limitation de la largeur pour une mise en page correcte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Animation de l'effet de survol */
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+}
+
+/* Pied de page */
+.admin-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}

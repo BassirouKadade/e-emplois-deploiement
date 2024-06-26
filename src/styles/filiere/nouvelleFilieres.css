@@ -1,0 +1,133 @@
+:root {
+  --primary-color: rgba(29, 120, 120, 0.843);
+  --primary-hover-color: rgb(97, 116, 116);
+  --shadow-color: #ece2e2a4;
+  --text-color: #000000;
+}
+
+.parentFiliere { /* Modification du nom de la classe */
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info .is-invalid-error {
+  border-color: red;
+}
+
+.info .is-valid-confirm{
+  border: 1px solid #ccc;
+}
+
+.filiere { /* Modification du nom de la classe */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filiere h3 { /* Modification du nom de la classe */
+  user-select: none;
+  vertical-align: middle;
+  font-weight: 700;
+  line-height: 1.71429;
+  font-size: 1.9rem;
+  text-transform: unset;
+  font-family: "Public Sans", sans-serif;
+  text-align: left;
+  margin: 15px 0;
+  color:rgb(0, 167, 111);
+}
+
+.label {
+  color: rgb(99, 115, 129);
+  margin-bottom: 10px;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.existData {
+  font-size: 13px;
+  color: red;
+}
+
+.champsO {
+  color: red;
+}
+
+.filiereChild { /* Modification du nom de la classe */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 8px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.info {
+  width: 48%;
+}
+
+.infoDescription { /* Modification du nom de la classe */
+  width: 100%;
+}
+
+.inputClass {
+  transition: border-color 0.3s ease;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+}
+
+.inputClass:focus {
+  outline: none;
+  border-color: rgb(0, 167, 111);
+}
+
+.buttonF {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filiereChild .buttonMbut { /* Modification du nom de la classe */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  margin: 10px 0;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  font-weight: 700;
+  line-height: 1.71429;
+  font-size: 0.900rem;
+  text-transform: unset;
+  font-family: "Public Sans", sans-serif;
+  min-width: 134px;
+  min-height: 37px;
+  border-radius: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #fff;
+  background-color: rgb(0, 167, 111);
+}
+
+.filiereChild .buttonMbut:hover { /* Modification du nom de la classe */
+  background-color: rgba(0, 167, 111, 0.795);
+}
+
+.confirmation {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: max-content;
+  text-align: center;
+  padding: 4px 10px;
+  color: var(--text-color);
+  border-radius: 5px;
+}

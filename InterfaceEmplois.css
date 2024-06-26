@@ -1,0 +1,145 @@
+.sectionEmplois{
+  width: 100%;
+  height:400px;
+   display: flex;
+   flex-direction: column;
+}
+.headerEmplois{
+    height: calc(100% - 350px);
+    display: flex;
+    background-color: rgb(73, 68, 78);
+}
+.bodyEmplois{
+    background-color: blueviolet;
+    display: flex;
+
+}
+.dayEmplois{
+    display: flex;
+    flex-direction: column;
+}
+.headerEmplois .jourHeure{
+  height: 100%;
+  width: calc(100% - 900px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: rgb(199, 194, 194);
+  color: black;
+  border-bottom: 1px solid #ffff;
+  border-right: 1px solid #ffff;
+
+
+}
+
+.headerEmplois .HeureEmplois{
+  background-color: rgb(199, 194, 194);
+   width: 900px;
+   height: 100%;
+   display: flex;
+   font-weight: 600;
+   font-size: 13px;
+   color: black;
+}
+.hourEmploisSpan{
+  height: 100%;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dayEmploisSpan{
+   height: 51.66px;
+   background-color:rgb(199, 194, 194);
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding-left: 5px;
+   font-weight: 600;
+   font-size: 16px;
+   border-bottom: 1px solid #ffff;
+   color: black;
+}
+.dayEmplois{
+     width: calc(100% - 900px);
+     background-color: rgb(199, 194, 194);
+     color: black;
+}
+
+.containerEmplois {
+  width: 900px;
+  height: 310px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: cell;
+  background-image: url('../../assets//emplois1.png');
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+.spanCol {
+  position: absolute;
+  height: 51.66px;
+  border-radius: 5px;
+  background-color: gray;
+}
+.SpanSeanceGroupe{
+  position:absolute;
+  /* background-color:rgb(98, 150, 202); */
+  background-color:#2E765E
+  ;
+  /* background-color:rgb(55, 58, 52); */
+  height:51.66px;
+  border-radius: 5px;
+  cursor:pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.cursorResize {
+  cursor: ew-resize;
+}
+.howNombreSeance{
+    display: flex;
+}
+.hideNombreSeance{
+    display: none;
+}
+/* creation de style pour header emplois */
+.titreAlert{
+  display: flex;
+  height: 60px;
+  margin-bottom: 10px ;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  border-radius: 5px;
+}
+.publication-emplois{  
+  width: 40%;
+  text-align: end;
+}
+.publication-emplois button{
+  margin-left: 10px;
+}
+
+.supprimerEmplois{
+      top: -10px;
+      left: -2px;
+      width: 100%;
+}
+.seanceSelected{
+   background-color: palevioletred;
+}
+
+.backgroundSeanceFAD{
+  background-color: #3D5B59  ;
+}

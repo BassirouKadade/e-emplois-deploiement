@@ -1,0 +1,12 @@
+.formateur-section {
+    width:600px;
+    height: auto;
+    /* margin: 30px auto; */
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f1f113;
+  }
+
+

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.descritionsection{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/*------------ Login container ------------*/
+
+.box-area {
+    width: 930px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+.rounded-5 {
+    border-radius: 30px;
+}
+#img-container{
+    background: linear-gradient(135deg, #3E9679, #A5C29F);
+
+}
+#se-connecter-button{
+    background: linear-gradient(135deg, #3E9679, #A5C29F);
+    color: white;
+
+}
+
+/* Styling for inputs when focused */
+.form-control:focus {
+    border-color: #3E9679 !important; /* Change border color to #3E9679 */
+    box-shadow: 0 0 0 0.25rem rgba(62, 150, 121, 0.25) !important; /* Optional: Add a subtle box shadow */
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px) {
+
+    .box-area {
+        margin: 0 10px;
+    }
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+    .right-box {
+        padding: 20px;
+    }
+}
+@keyframes logoAnimation {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-logo {
+    animation: logoAnimation 0.5s ease-out forwards;
+}
+
+
+
+/* Apply typewriter animation to the text */
+
+/* The typing effect */
+
+/* Animation pour l'effet machine à écrire */
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+.typewriter-text {
+    overflow: hidden; /* Pour cacher le texte qui dépasse */
+    border-right: .15em solid rgb(255, 255, 255); /* Animation du curseur */
+    white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+    margin: 0 auto; /* Centre le texte */
+    letter-spacing: .15em; /* Espacement entre les lettres */
+    animation: 
+        typewriter 4s steps(50, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* Animation du curseur */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(255, 255, 255); }
+}
+
+

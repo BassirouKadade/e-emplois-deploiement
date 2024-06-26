@@ -1,0 +1,166 @@
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-layout {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.dashboard-inner-layout {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+
+/* 
+*****************************************************
+*****************
+Mise en place de style de composant CustomMenu
+
+**************************************************
+*/
+
+.ant-menu-item-selected {
+  background: linear-gradient(135deg, rgba(91, 228, 155, 0.2), rgba(0, 167, 111, 0.2)) rgb(255, 255, 255) !important;
+  padding: 10px;
+  color: rgb(0, 167, 111) !important; /* Utilisation de rgba avec une opacité de 0.8 pour une couleur plus foncée */
+}
+.ant-menu-item-selected::after {
+    border-right: 3px solid rgb(0, 167, 111) !important;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+  }
+  
+  .header-button:hover {
+    border: 1px solid  rgb(0, 167, 111) !important; 
+  }
+  
+  .logo-container span:nth-child(1) {
+    width: 98%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #fff !important;
+  }
+  
+  .siderNav::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  .siderNav {
+    scrollbar-width: 10px;
+  }
+  
+  .siderNav::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .siderNav::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  .siderNav:hover::-webkit-scrollbar-thumb {
+    background-color: #a7a5a5;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .siderNav::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+  
+  .menuItems a {
+     color: #666; 
+     font-weight: 400;
+     transition: none;
+  }
+  
+
+/* 
+*****************************************************
+*****************
+Mise en place de style de composant CustomHeader
+
+**************************************************
+*/
+.header-custom-header{
+  padding: 0;
+  background:#fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.header-custom-header{
+  height: 52px;
+  margin: 14px 0;
+  width: 100%;
+  color: rgb(97, 105, 112);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 0 15px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06), 0 -1px 0px rgba(0, 0, 0, 0.03);
+}
+.info-profile-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+}
+
+.profile-icon {
+  margin: 0 5px;
+  padding: 8px;
+  transition: transform 0.1s ease-in-out;
+  font-size: 39px;
+  border-radius: 50%;
+  color: #888787;
+  cursor: pointer;
+}
+
+.profile-icon:hover {
+  background-color: rgba(0, 167, 111, 0.032);
+}
+
+.setting {
+  animation: animate 9s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.notification-settings-user-icons {
+  display: flex;
+  width: calc(100% - 30%);
+  justify-content: flex-end;
+}
+
+.user{
+ width: 60px;
+}
+
+
+

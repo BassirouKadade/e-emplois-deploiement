@@ -1,0 +1,117 @@
+.disponiblite-data{ 
+    width: 600px;
+    height: 430px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.type-cours{   
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 14px;
+}
+
+.type{
+    margin-right: 10px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: aliceblue;
+}
+
+.type-PRE{ 
+  cursor:default;
+    background-color:rgba(0, 139, 139, 0.699);
+}
+.type-FAD{ 
+    cursor:default;
+    background-color:rgba(148, 0, 211, 0.699);
+}
+
+
+/* Gestion d ela disponiblité ************ */
+.disponiblite-formateur-salle{
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+   
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+
+  .disponiblite-formateur,.disponiblite-salle {
+    padding: 0;
+    margin: 0;
+    width: 49%;
+    height: 320px;  
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px rgba(145, 158, 171, 0.2), 0px 10px 14px -4px rgba(145, 158, 171, 0.12);
+  }
+  
+  .disponiblite-formateur-ul,.disponiblite-salle-ul{
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 28px);
+    /* background-color: #a7a5a5; */
+  }
+  .disponiblite-formateur-ul::-webkit-scrollbar-thumb,.overflowYNav::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  .disponiblite-formateur-ul, .overflowYNav {
+    scrollbar-width: 10px;
+  }
+  
+  .disponiblite-formateur-ul::-webkit-scrollbar,.overflowYNav::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .disponiblite-formateur-ul::-webkit-scrollbar-thumb, .overflowYNav::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  
+  .disponiblite-formateur-ul:hover::-webkit-scrollbar-thumb,.overflowYNav:hover::-webkit-scrollbar-thumb {
+    background-color: #a7a5a5;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .disponiblite-formateur-ul::-webkit-scrollbar-track,  .overflowYNav::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+  .disponiblite-formateur-ul li, .disponiblite-salle-ul li {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding:  8px 10px;
+    font-size: 14px;
+    border-radius: 7px;
+    align-items: center; 
+    color: #000;
+    background-color: rgba(244, 246, 248, 0.090);
+    justify-content: space-between;
+  }
+  
+  .disponiblite-formateur-ul li:hover,.disponiblite-salle-ul li:hover{
+    color:#000;
+    background-color: rgba(244, 246, 248);
+  }
+  
+  .elementHoverBackgroundSalleSelect {
+    background: linear-gradient(135deg, rgba(91, 228, 155, 0.1), rgba(0, 167, 111, 0.1)) rgb(255, 255, 255);
+}

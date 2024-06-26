@@ -1,0 +1,115 @@
+
+  .admin-wrapper {
+    display: flex;
+  }
+  
+  /* Container */
+  .admin-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  
+  /* Header */
+  .admin-header {
+    background: linear-gradient(135deg, #3E9679, #A5C29F);
+    color:#fff;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    animation: slideDown 0.5s ease;
+    display: flex;
+    width: 97%;
+    margin: auto;
+    margin-bottom: 29px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .admin-logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin: 0;
+    margin-right: 70px; /* Adjust spacing as needed */
+  }
+  
+  .admin-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  
+  .admin-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Main Content */
+  .admin-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .admin-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .admin-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 30%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    animation: fadeInUp 0.5s ease;
+  }
+  
+  .admin-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .admin-card h2 {
+    margin-top: 0;
+    font-size: 21px;
+    color: #3E9679;
+  }
+  
+  .admin-card p {
+    color: #666666;
+  }
+  
+  /* Animations */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

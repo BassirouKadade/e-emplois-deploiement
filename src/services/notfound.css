@@ -1,0 +1,52 @@
+/* NotFound.css */
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% de la hauteur de la vue */
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .not-found h1 {
+    font-size: 3rem; /* Taille de la police du titre */
+    margin-bottom: 20px; /* Marge en bas du titre */
+    color: #333; /* Couleur du texte */
+  }
+  
+  .not-found p {
+    font-size: 1.5rem; /* Taille de la police du paragraphe */
+    color: #555; /* Couleur du texte */
+    margin-bottom: 30px; /* Marge en bas du paragraphe */
+  }
+  
+  .not-found .back-link {
+    text-decoration: none;
+    background-color: rgb(0, 167, 111); /* Couleur de fond du lien */
+    color: #fff; /* Couleur du texte du lien */
+    padding: 10px 20px; /* Remplissage du lien */
+    border-radius: 5px; /* Bordure arrondie */
+    font-size: 1.2rem; /* Taille de la police du lien */
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease; /* Transition en douceur de la couleur de fond */
+  }
+  
+  .not-found .back-link:hover {
+    outline: none; /* Supprimer la bordure de mise au point */
+    color: rgb(0, 167, 111);
+    background-color: #fff;
+    border: 1px solid rgba(0, 167, 111); /* Effet de mise au point */
+  }
+  
+  .not-found .back-link:focus {
+   
+  }
+  
+  .not-found .illustration {
+    max-width: 100%; /* Largeur maximale de l'image ou illustration */
+    height: auto; /* Hauteur automatique pour maintenir l'aspect ratio */
+    margin-top: 50px; /* Marge en haut de l'illustration */
+  }
+  
