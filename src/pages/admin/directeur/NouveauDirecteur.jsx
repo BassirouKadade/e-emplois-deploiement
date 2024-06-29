@@ -81,11 +81,7 @@ export default function NouveauDirecteur() {
     } else {
       setErrors(prev => ({ ...prev, prenom: false }));
     }
-
-    if (!REGEX_PASSWORD.test(data.password)) {
-      setErrors(prev => ({ ...prev, password: true }));
-      hasError = true;
-    } else {
+    else {
       setErrors(prev => ({ ...prev, password: false }));
     }
 
