@@ -7,7 +7,6 @@ import { ajouterUser } from '../../../request/userRequest/userRequest'; // Mettr
 import Progress from '../../../components/Progess';
 import { SmileOutlined } from '@ant-design/icons';
 import { notification } from 'antd';
-import { REGEX_PASSWORD } from '../../../request/regex';
 import { Helmet } from 'react-helmet';
 export default function NouveauDirecteur() {
   const [errors, setErrors] = useState({
@@ -81,10 +80,6 @@ export default function NouveauDirecteur() {
     } else {
       setErrors(prev => ({ ...prev, prenom: false }));
     }
-    else {
-      setErrors(prev => ({ ...prev, password: false }));
-    }
-
     return !hasError;
   }
 
