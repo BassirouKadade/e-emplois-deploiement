@@ -399,7 +399,7 @@ useEffect(()=>{
       if (!hasOneNotEmptySalle && dataEmploisSalle?.selectedSalle && !dataEmploisSalle.loading) {
         showNotification();
       }
-    }, 500);
+    }, 2500);
 
     // Nettoyage du timeout lorsque le composant est démonté ou les dépendances changent
     return () => clearTimeout(timeoutId);
@@ -777,7 +777,7 @@ const getIconColor = () => {
             </span>
           </span>
           {dataEmploisSalle?.selectedSalle ? (
-            !dataEmploisSalle.loading ?
+            !dataEmploisSalle.loading && emploisSalle  ?
               hasOneNotEmptySalle ?
                 Object.keys(emploisSalle).map((day) => (
                   <React.Fragment key={day}>

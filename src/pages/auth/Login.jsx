@@ -40,12 +40,18 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const isEmailValid = validateEmail();
-    const isPasswordValid = validatePassword();
 
-    if (isEmailValid && isPasswordValid) {
-      mutation.mutate(data);
+    if(!validateEmail()){
+        return ;
     }
+    
+    if(!validatePassword()){
+      return ;
+  }
+  setErrorMessages({ ...errorMessages,passwordError:"", emailError: "" });
+
+      mutation.mutate(data);
+
   }
 
   const handleChange = (e) => {
@@ -56,7 +62,7 @@ export default function Login() {
 
   const validateEmail = () => {
     if (!data.email.trim()) {
-      setErrorMessages({ ...errorMessages, emailError: "Veuillez fournir une adresse e-mail." });
+      setErrorMessages(prev=>({ ...prev, emailError: "Veuillez fournir une adresse e-mail." }));
       return false;
     } else if (!regexEmail.test(data.email)) {
       setErrorMessages({ ...errorMessages, emailError: "Adresse e-mail invalide." });

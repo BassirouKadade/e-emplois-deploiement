@@ -59,7 +59,7 @@ export default function HeaderSection({ data }) {
  
 
   return (
-    <div style={{padding:0, width:'97%'}} className="titreAlert">
+    <div style={{padding:0, width:'985px'}} className="titreAlert">
       <span>
         <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
           {breadcrumbs}
