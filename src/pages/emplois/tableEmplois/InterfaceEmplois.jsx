@@ -396,7 +396,7 @@ useEffect(()=>{
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      if (!hasOneNotEmptySalle && dataEmploisSalle?.selectedSalle && !dataEmploisSalle.loading) {
+      if (!hasOneNotEmptySalle && dataEmploisSalle?.selectedSalle && dataEmploisSalle?.data && !dataEmploisSalle.loading) {
         showNotification();
       }
     }, 2500);
@@ -777,7 +777,7 @@ const getIconColor = () => {
             </span>
           </span>
           {dataEmploisSalle?.selectedSalle ? (
-            !dataEmploisSalle.loading && emploisSalle  ?
+            !dataEmploisSalle.loading && dataEmploisSalle?.data  ?
               hasOneNotEmptySalle ?
                 Object.keys(emploisSalle).map((day) => (
                   <React.Fragment key={day}>
